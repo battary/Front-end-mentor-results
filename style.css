@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+:root{
+    /*Primary*/
+    --Light-red: hsla(0, 100%, 67%, 0.3);
+    --Orangey-yellow: hsla(39, 100%, 56%, 0.3);
+    --Green-teal: hsla(166, 100%, 37%, 0.3);
+    --Cobalt-blue: hsla(234, 85%, 45%, 0.3);
+
+    /*Gradient bg*/
+    --Light-slate-blue:hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    /*Gradient circle*/
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+    /*neutral*/
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.maincontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 350px;
+    padding: 50px;
+    border-radius: 20px;
+    background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    color: white;
+}
+
+.leftcontainer h1{
+    text-align: center;
+}
+
+.rightcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 350px;
+}
+
+.summarytext {
+    width: 100%;
+    text-align: left;
+}
+
+
+.reaction, .memory, .verbal, .visual {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    height: 35px;
+    gap: 10px;
+    border-radius: 10px;
+    
+}
+
+.reaction {
+    background-color: var(--Light-red);
+}
+
+.memory {
+    background-color: var(--Orangey-yellow);
+}
+
+.verbal {
+    background-color: var(--Green-teal);
+}
+
+.visual {
+    background-color: var(--Cobalt-blue);
+}
+
+.score{
+    margin-left: auto;
+}
