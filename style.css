@@ -64,11 +64,16 @@ body{
     text-align: center;
 }
 
+.discription{
+    text-align: center;
+}
+
 .rightcontainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: 30px;
     height: 100%;
     width: 350px;
 }
